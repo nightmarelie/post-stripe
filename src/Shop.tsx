@@ -3,6 +3,7 @@ import { CardElement } from "react-stripe-elements";
 import PropTypes from "prop-types";
 import axios from "axios";
 import qs from "query-string-object";
+import { injectStripe } from "react-stripe-elements";
 
 const prices = {
   banana: 150,
@@ -135,3 +136,5 @@ Shop.propTypes = {
     createToken: PropTypes.func.isRequired,
   }).isRequired,
 };
+
+export default injectStripe(Shop);
