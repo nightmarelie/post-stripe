@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <StripeProvider apiKey="test">
+    <StripeProvider apiKey="pk_test_2roASLi0URfyJJS6fhEyVLIf">
       <Elements>
         <App />
       </Elements>
